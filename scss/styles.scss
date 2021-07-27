@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    //padding: 0 30px 0 30px;
+}
+$roboto : 'Roboto', sans-serif;
+$poppins:'Poppins', sans-serif;
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFF;
+    box-shadow: 2px 3px #81ac3c4b;
+    div{
+        width: 100%;
+        padding: 30px 0 30px 0;
+        img{
+            margin-left: 35px;
+        }
+        button{
+            margin-right: 35px;
+            float: right;
+            display: block;
+            margin-top: 12px;
+            background-color: #FC8816;
+            color: #FFF;
+            border: none;
+            height: 37px;
+            width: 180px;
+            padding: 0;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: $roboto;
+        }
+    }
+    nav{
+        display: flex;
+        margin-right: 35px;
+        margin-left: 35px;
+        justify-content: space-around ;
+        //text-align: center;
+        border-top: 1px solid #B7B7B7;
+        padding: 12px 0 12px 0;
+        a{
+            flex: 1;
+            color: #46474A;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: $roboto;
+        }
+        a.cat-link{
+            flex: 2;
+        }
+        a.current-pg{
+            color: #81AC3C;
+        }
+    }
+}
+main{
+    margin-top: 150px;
+    .car-cont{
+        width: 100%;
+        height: 65vh;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        
+        .motiv{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: left;
+
+            .info-cont{
+                width: 23%;
+                background-color: #000000c4;
+                max-height: 27vh;
+                padding: 30px;
+                margin-left: 35px;
+                margin-top: 35px;
+                color: #FFF;
+                font-family: $poppins;
+                h2{
+                    font-family: $roboto;
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                }
+                hr{
+                    width: 80px;
+                    border: none;
+                    border-top: solid 2px #81AC3C;
+                }
+                p{
+                    font-size: 0.9rem;
+                    font-weight: 100;
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                }
+                p.price{
+                    width: 20%;
+                    margin-top: 0;
+                    display: inline-block;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color:#FC8816;
+                    font-family: $roboto;
+                    font-style: italic;
+                }
+                div{
+                    // display: flex;
+                    //justify-content: space-evenly;
+                    width: 100%;
+
+                    button{
+                        float: right;
+                        //display: inline-block;
+                        background-color: #81AC3C;
+                        height: 33px;
+                        color: #FFF;
+                        border: none;
+                        width: 95px;
+                        font-size: 0.7rem;
+                        padding: 0;
+                        font-weight: bold;
+                        border-radius: 3px;
+
+                    }
+                }
+
+            }
+        }
+        .motiv1{
+            background-image: url(../img/ave.jpg);
+            background-size: cover;
+        }
+        .motiv2{
+            background-image: url(../img/cozy.jpg);
+            background-size: cover;
+        }
+        .motiv3{
+            background-image: url(../img/luxury.jpg);
+            background-size: cover;
+        }
+    }
+
+    .activity{
+        width: 75%;
+        color: #000;
+        margin: auto;
+        margin-top: -120px;
+        position: relative;
+        z-index: 4;
+        background-color: #FFF;
+        padding: 50px;
+        box-shadow: 3px 5px 2px #81ac3c4b;
+        margin-bottom: 60px;
+        h2{
+            margin-bottom: 30px;
+            font-family: $roboto;
+            color: #46474A;
+        }
+        .acts{
+            display: flex;
+            flex-direction: column;
+            div{
+
+                display: flex;
+                margin-bottom: 30px;
+
+
+    
+                div{
+                    flex: 1;
+                    flex-direction: column;
+                    
+                    input, select{
+                        height: 40px;
+                        border: 1px solid #c5c5c5;
+                        width: 80%;
+                        padding: 10px;
+                        margin-right: 5px;
+                        ///color: #707070
+                    }
+                    input{
+                        height: 18px; 
+                    }
+                    label{
+                        color: #46474A;
+                        font-family: $poppins;
+                        font-weight: 200;
+                        font-size: 0.8rem;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            div.act-bel{
+                div{
+                    margin-right: 5px;
+                }
+                div.db-input{
+                    flex-direction: row;
+                    span{
+                        margin-right: 5px;
+                        margin-top: 10px;
+                    }
+                }
+                .small-sel-div{
+                    margin-right: -50px;
+                    .small-select{
+                        width: 50%;
+                        //margin: auto;
+                    }
+                }
+                button{
+                    height: 40px;
+                    width: 100px;
+                    border: none;
+                    background-color: #81AC3C;
+                    color: #FFF;
+                    margin-top: 25px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    div.categ{
+        width: 83%;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 70px;
+        h2{
+            color: #46474A;
+            font-family: $roboto;
+            margin-bottom: 10px;
+        }
+        hr{
+            width: 60px;
+            border: none;
+            border-top: solid 2px #81AC3C;  
+            margin-bottom: 40px;  
+            margin-top: 0;
+
+        }
+        div.grids{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            position: relative;
+            .grid{
+                flex: 1;
+                position: relative;
+                height: 40vh;
+                width: 40%;
+                margin: 0;
+                background-size: cover;
+                //background-repeat: no-repeat;
+                margin-right: 13px;
+                margin-bottom: 13px;
+                overflow: hidden;
+                cursor: pointer;
+                div{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: #000000e0;
+                    height: 43px;
+                    color: #FFF;
+                    padding: 10px;
+                    h3{
+                        font-family: $roboto;
+                        margin-bottom: 4px;
+                    }
+                    p{
+                        font-family: $poppins;
+                        font-weight: 100;
+                        font-size: 0.8rem;
+                    }
+
+                }
+            }
+            .grid1{
+                background-image: url(../img/studio.jpg);
+            }
+            .grid2{
+                background-image: url(../img/luxury.jpg);
+            }
+            .grid3{
+                background-image: url(../img/cozy.jpg);
+            }
+            .grid4{
+                background-image: url(../img/swim.jpg);
+            }
+        }
+    }
+
+
+
+    div.recents{
+        width: 83%;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 70px;
+        h2{
+            color: #46474A;
+            font-family: $roboto;
+            margin-bottom: 10px;
+        }
+        hr{
+            width: 60px;
+            border: none;
+            border-top: solid 2px #81AC3C;  
+            margin-bottom: 40px;  
+            margin-top: 0;
+        }
+        div.gridss{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            position: relative;
+            div.gridd{
+                flex: 1;
+                position: relative;
+                width: 25%;
+                margin-right: 20px;
+                img.building-img{
+                    width: 100%;
+                    height: 40vh;
+                   
+                    margin-bottom: 10px;
+                }
+                h3{
+                    color: #81AC3C;
+                    font-family: $roboto;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-family: $poppins;
+                }
+                p.price{
+                    font-weight: bold;
+                    font-family: $roboto;
+                    font-style: normal;
+                    sub{
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+                div.specs{
+                    display: flex;
+
+                    div{
+                        p{
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            color: #46474A;
+                        }
+                        flex: 1;
+                    }
+                }
+                p.descr{
+                    margin-top: 15px;
+                    margin-bottom: 50px;
+                    font-size: 0.85rem;
+
+                }
+            }
+        }
+    }
+
+
+
+    div.merit{
+        color: #FFF;
+        width: 100%;
+        background-color: #282E3E;
+        padding: 50px 0;
+        .inner-merit{
+            width: 83%;
+            margin: auto;
+            h2{
+                //color: #46474A;
+                font-family: $roboto;
+                margin-bottom: 10px;
+            }
+            hr{
+                width: 60px;
+                border: none;
+                border-top: solid 2px #81AC3C;  
+                margin-bottom: 40px;  
+                margin-top: 0;
+    
+            }
+
+            div.gridsss{
+                display: flex;
+                width: 100%;
+
+                div{
+                    flex: 1;
+                    margin-right: 20px;
+
+                    span{
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #FC8816;
+                        display: inline-block;
+                    }
+                    h3{
+                        font-family: $roboto;
+                        color: #FFF;
+                    }
+                    p{
+                        font-family: $poppins;
+                        font-size: 0.8rem;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    width: 96%;
+    overflow-x: hidden;
+    background-color: #282E3E;
+    color: #FFF;
+    padding: 20px;
+    padding-top: 100px;
+    div{
+        margin-right: 30px;
+        flex: 1;
+        img{
+            margin-bottom: 20px;
+        }
+        h3{
+            font-family: $roboto;
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: $poppins;
+            font-weight: 200;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        span{
+            color:#FC8816;
+
+        }
+        li{
+            color: #FC8816;
+            margin-top: 15px;
+            font-family: $roboto;
+        }
+        input, button{
+            width: 100%;
+            height: 35px;
+            margin-top: 8px;
+            
+            //padding: 10px;
+        }
+        button{
+            margin-left: 2px;
+            background-color: #81AC3C;
+            color: #FFF;
+            border: none;
+            height: 40px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

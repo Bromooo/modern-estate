@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #FFF;
+  box-shadow: 2px 3px #81ac3c4b;
+}
+header div {
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+header div img {
+  margin-left: 35px;
+}
+header div button {
+  margin-right: 35px;
+  float: right;
+  display: block;
+  margin-top: 12px;
+  background-color: #FC8816;
+  color: #FFF;
+  border: none;
+  height: 37px;
+  width: 180px;
+  padding: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+header nav {
+  display: flex;
+  margin-right: 35px;
+  margin-left: 35px;
+  justify-content: space-around;
+  border-top: 1px solid #B7B7B7;
+  padding: 12px 0 12px 0;
+}
+header nav a {
+  flex: 1;
+  color: #46474A;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+header nav a.cat-link {
+  flex: 2;
+}
+header nav a.current-pg {
+  color: #81AC3C;
+}
+
+main {
+  margin-top: 150px;
+}
+main .car-cont {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+main .car-cont .motiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: left;
+}
+main .car-cont .motiv .info-cont {
+  width: 23%;
+  background-color: #000000c4;
+  max-height: 27vh;
+  padding: 30px;
+  margin-left: 35px;
+  margin-top: 35px;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+}
+main .car-cont .motiv .info-cont h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+main .car-cont .motiv .info-cont hr {
+  width: 80px;
+  border: none;
+  border-top: solid 2px #81AC3C;
+}
+main .car-cont .motiv .info-cont p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+main .car-cont .motiv .info-cont p.price {
+  width: 20%;
+  margin-top: 0;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FC8816;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+main .car-cont .motiv .info-cont div {
+  width: 100%;
+}
+main .car-cont .motiv .info-cont div button {
+  float: right;
+  background-color: #81AC3C;
+  height: 33px;
+  color: #FFF;
+  border: none;
+  width: 95px;
+  font-size: 0.7rem;
+  padding: 0;
+  font-weight: bold;
+  border-radius: 3px;
+}
+main .car-cont .motiv1 {
+  background-image: url(../img/ave.jpg);
+  background-size: cover;
+}
+main .car-cont .motiv2 {
+  background-image: url(../img/cozy.jpg);
+  background-size: cover;
+}
+main .car-cont .motiv3 {
+  background-image: url(../img/luxury.jpg);
+  background-size: cover;
+}
+main .activity {
+  width: 75%;
+  color: #000;
+  margin: auto;
+  margin-top: -120px;
+  position: relative;
+  z-index: 4;
+  background-color: #FFF;
+  padding: 50px;
+  box-shadow: 3px 5px 2px #81ac3c4b;
+  margin-bottom: 60px;
+}
+main .activity h2 {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #46474A;
+}
+main .activity .acts {
+  display: flex;
+  flex-direction: column;
+}
+main .activity .acts div {
+  display: flex;
+  margin-bottom: 30px;
+}
+main .activity .acts div div {
+  flex: 1;
+  flex-direction: column;
+}
+main .activity .acts div div input, main .activity .acts div div select {
+  height: 40px;
+  border: 1px solid #c5c5c5;
+  width: 80%;
+  padding: 10px;
+  margin-right: 5px;
+}
+main .activity .acts div div input {
+  height: 18px;
+}
+main .activity .acts div div label {
+  color: #46474A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+main .activity .acts div.act-bel div {
+  margin-right: 5px;
+}
+main .activity .acts div.act-bel div.db-input {
+  flex-direction: row;
+}
+main .activity .acts div.act-bel div.db-input span {
+  margin-right: 5px;
+  margin-top: 10px;
+}
+main .activity .acts div.act-bel .small-sel-div {
+  margin-right: -50px;
+}
+main .activity .acts div.act-bel .small-sel-div .small-select {
+  width: 50%;
+}
+main .activity .acts div.act-bel button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background-color: #81AC3C;
+  color: #FFF;
+  margin-top: 25px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+main div.categ {
+  width: 83%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 70px;
+}
+main div.categ h2 {
+  color: #46474A;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+main div.categ hr {
+  width: 60px;
+  border: none;
+  border-top: solid 2px #81AC3C;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+main div.categ div.grids {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+main div.categ div.grids .grid {
+  flex: 1;
+  position: relative;
+  height: 40vh;
+  width: 40%;
+  margin: 0;
+  background-size: cover;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main div.categ div.grids .grid div {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #000000e0;
+  height: 43px;
+  color: #FFF;
+  padding: 10px;
+}
+main div.categ div.grids .grid div h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 4px;
+}
+main div.categ div.grids .grid div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+main div.categ div.grids .grid1 {
+  background-image: url(../img/studio.jpg);
+}
+main div.categ div.grids .grid2 {
+  background-image: url(../img/luxury.jpg);
+}
+main div.categ div.grids .grid3 {
+  background-image: url(../img/cozy.jpg);
+}
+main div.categ div.grids .grid4 {
+  background-image: url(../img/swim.jpg);
+}
+main div.recents {
+  width: 83%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 70px;
+}
+main div.recents h2 {
+  color: #46474A;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+main div.recents hr {
+  width: 60px;
+  border: none;
+  border-top: solid 2px #81AC3C;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+main div.recents div.gridss {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+main div.recents div.gridss div.gridd {
+  flex: 1;
+  position: relative;
+  width: 25%;
+  margin-right: 20px;
+}
+main div.recents div.gridss div.gridd img.building-img {
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 10px;
+}
+main div.recents div.gridss div.gridd h3 {
+  color: #81AC3C;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+main div.recents div.gridss div.gridd p {
+  font-family: "Poppins", sans-serif;
+}
+main div.recents div.gridss div.gridd p.price {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+main div.recents div.gridss div.gridd p.price sub {
+  font-weight: 400;
+  font-style: normal;
+}
+main div.recents div.gridss div.gridd div.specs {
+  display: flex;
+}
+main div.recents div.gridss div.gridd div.specs div {
+  flex: 1;
+}
+main div.recents div.gridss div.gridd div.specs div p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #46474A;
+}
+main div.recents div.gridss div.gridd p.descr {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  font-size: 0.85rem;
+}
+main div.merit {
+  color: #FFF;
+  width: 100%;
+  background-color: #282E3E;
+  padding: 50px 0;
+}
+main div.merit .inner-merit {
+  width: 83%;
+  margin: auto;
+}
+main div.merit .inner-merit h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+main div.merit .inner-merit hr {
+  width: 60px;
+  border: none;
+  border-top: solid 2px #81AC3C;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+main div.merit .inner-merit div.gridsss {
+  display: flex;
+  width: 100%;
+}
+main div.merit .inner-merit div.gridsss div {
+  flex: 1;
+  margin-right: 20px;
+}
+main div.merit .inner-merit div.gridsss div span {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #FC8816;
+  display: inline-block;
+}
+main div.merit .inner-merit div.gridsss div h3 {
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+}
+main div.merit .inner-merit div.gridsss div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+footer {
+  display: flex;
+  width: 96%;
+  overflow-x: hidden;
+  background-color: #282E3E;
+  color: #FFF;
+  padding: 20px;
+  padding-top: 100px;
+}
+footer div {
+  margin-right: 30px;
+  flex: 1;
+}
+footer div img {
+  margin-bottom: 20px;
+}
+footer div h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+footer div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+footer div span {
+  color: #FC8816;
+}
+footer div li {
+  color: #FC8816;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+}
+footer div input, footer div button {
+  width: 100%;
+  height: 35px;
+  margin-top: 8px;
+}
+footer div button {
+  margin-left: 2px;
+  background-color: #81AC3C;
+  color: #FFF;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
