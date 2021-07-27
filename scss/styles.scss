@@ -136,15 +136,15 @@ main{
             }
         }
         .motiv1{
-            background-image: url(../img/ave.jpg);
+            background-image: url(../img/bg1.jpg);
             background-size: cover;
         }
         .motiv2{
-            background-image: url(../img/cozy.jpg);
+            background-image: url(../img/bg2.jpg);
             background-size: cover;
         }
         .motiv3{
-            background-image: url(../img/luxury.jpg);
+            background-image: url(../img/bg3.jpg);
             background-size: cover;
         }
     }
@@ -391,6 +391,7 @@ main{
                 font-family: $roboto;
                 margin-bottom: 10px;
             }
+            
             hr{
                 width: 60px;
                 border: none;
@@ -417,12 +418,14 @@ main{
                     }
                     h3{
                         font-family: $roboto;
+                        margin-bottom: 10px;
                         color: #FFF;
                     }
                     p{
                         font-family: $poppins;
+
                         font-size: 0.8rem;
-                        font-weight: 200;
+                        font-weight: 100;
                     }
                 }
             }
@@ -431,53 +434,62 @@ main{
 }
 
 footer{
-    display: flex;
-    width: 96%;
-    overflow-x: hidden;
+    
+    //overflow-x: hidden;
+    width: 100%;
     background-color: #282E3E;
     color: #FFF;
-    padding: 20px;
+    
     padding-top: 100px;
-    div{
-        margin-right: 30px;
-        flex: 1;
-        img{
-            margin-bottom: 20px;
-        }
-        h3{
-            font-family: $roboto;
-            margin-bottom: 20px;
-        }
-        p{
-            font-family: $poppins;
-            font-weight: 200;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-        span{
-            color:#FC8816;
-
-        }
-        li{
-            color: #FC8816;
-            margin-top: 15px;
-            font-family: $roboto;
-        }
-        input, button{
-            width: 100%;
-            height: 35px;
-            margin-top: 8px;
-            
-            //padding: 10px;
-        }
-        button{
-            margin-left: 2px;
-            background-color: #81AC3C;
-            color: #FFF;
-            border: none;
-            height: 40px;
-            font-weight: bold;
+    div.foot{
+        display: flex;
+        padding: 30px 0;
+        margin: auto;
+        justify-content: space-around;
+        margin-right: 35px;
+        margin-left: 35px;
+        div{
+            width: 25%;
+            margin-right: 30px;
+            flex: 1;
+            img{
+                margin-bottom: 20px;
+            }
+            h3{
+                font-family: $roboto;
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: $poppins;
+                font-weight: 200;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 0.9rem;
+            }
+            span{
+                color:#FC8816;
+    
+            }
+            li{
+                color: #FC8816;
+                margin-top: 15px;
+                font-family: $roboto;
+            }
+            input, button{
+                width: 100%;
+                height: 35px;
+                margin-top: 8px;
+                
+                //padding: 10px;
+            }
+            button{
+                margin-left: 2px;
+                background-color: #81AC3C;
+                color: #FFF;
+                border: none;
+                height: 40px;
+                font-weight: bold;
+            }
         }
     }
 }

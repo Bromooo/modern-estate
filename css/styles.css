@@ -129,15 +129,15 @@ main .car-cont .motiv .info-cont div button {
   border-radius: 3px;
 }
 main .car-cont .motiv1 {
-  background-image: url(../img/ave.jpg);
+  background-image: url(../img/bg1.jpg);
   background-size: cover;
 }
 main .car-cont .motiv2 {
-  background-image: url(../img/cozy.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
 }
 main .car-cont .motiv3 {
-  background-image: url(../img/luxury.jpg);
+  background-image: url(../img/bg3.jpg);
   background-size: cover;
 }
 main .activity {
@@ -385,55 +385,62 @@ main div.merit .inner-merit div.gridsss div span {
 }
 main div.merit .inner-merit div.gridsss div h3 {
   font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
   color: #FFF;
 }
 main div.merit .inner-merit div.gridsss div p {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 footer {
-  display: flex;
-  width: 96%;
-  overflow-x: hidden;
+  width: 100%;
   background-color: #282E3E;
   color: #FFF;
-  padding: 20px;
   padding-top: 100px;
 }
-footer div {
+footer div.foot {
+  display: flex;
+  padding: 30px 0;
+  margin: auto;
+  justify-content: space-around;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+footer div.foot div {
+  width: 25%;
   margin-right: 30px;
   flex: 1;
 }
-footer div img {
+footer div.foot div img {
   margin-bottom: 20px;
 }
-footer div h3 {
+footer div.foot div h3 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
 }
-footer div p {
+footer div.foot div p {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
-footer div span {
+footer div.foot div span {
   color: #FC8816;
 }
-footer div li {
+footer div.foot div li {
   color: #FC8816;
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
 }
-footer div input, footer div button {
+footer div.foot div input, footer div.foot div button {
   width: 100%;
   height: 35px;
   margin-top: 8px;
 }
-footer div button {
+footer div.foot div button {
   margin-left: 2px;
   background-color: #81AC3C;
   color: #FFF;
