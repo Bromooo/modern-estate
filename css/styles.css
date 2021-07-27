@@ -38,6 +38,12 @@ header div button {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
+header nav.mobile-nav {
+  display: none;
+}
+header div.sidenav {
+  display: none;
+}
 header nav {
   display: flex;
   margin-right: 35px;
@@ -52,6 +58,10 @@ header nav a {
   font-weight: bold;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+}
+header nav a:hover {
+  color: #81AC3C;
+  font-style: italic;
 }
 header nav a.cat-link {
   flex: 2;
@@ -169,7 +179,8 @@ main .activity .acts div div {
   flex: 1;
   flex-direction: column;
 }
-main .activity .acts div div input, main .activity .acts div div select {
+main .activity .acts div div input,
+main .activity .acts div div select {
   height: 40px;
   border: 1px solid #c5c5c5;
   width: 80%;
@@ -297,6 +308,9 @@ main div.recents hr {
   margin-bottom: 40px;
   margin-top: 0;
 }
+main div.recents div.gridss.mobile-grids {
+  display: none;
+}
 main div.recents div.gridss {
   display: flex;
   width: 100%;
@@ -313,6 +327,15 @@ main div.recents div.gridss div.gridd img.building-img {
   width: 100%;
   height: 40vh;
   margin-bottom: 10px;
+}
+main div.recents div.gridss div.gridd span img {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+  margin-bottom: -7px;
+}
+main div.recents div.gridss div.gridd p.icon-text {
+  display: inline-block;
 }
 main div.recents div.gridss div.gridd h3 {
   color: #81AC3C;
@@ -368,6 +391,12 @@ main div.merit .inner-merit hr {
   margin-bottom: 40px;
   margin-top: 0;
 }
+main div.merit .inner-merit div.gridsss.desk-grid {
+  display: flex;
+}
+main div.merit .inner-merit div.gridsss.mobile-grids {
+  display: none;
+}
 main div.merit .inner-merit div.gridsss {
   display: flex;
   width: 100%;
@@ -376,12 +405,10 @@ main div.merit .inner-merit div.gridsss div {
   flex: 1;
   margin-right: 20px;
 }
-main div.merit .inner-merit div.gridsss div span {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: #FC8816;
+main div.merit .inner-merit div.gridsss div img {
+  width: 70px;
   display: inline-block;
+  margin-left: -15px;
 }
 main div.merit .inner-merit div.gridsss div h3 {
   font-family: "Roboto", sans-serif;
@@ -400,9 +427,12 @@ footer {
   color: #FFF;
   padding-top: 100px;
 }
+footer div.foot.mobile-grids {
+  display: none;
+}
 footer div.foot {
   display: flex;
-  padding: 30px 0;
+  padding: 40px 0;
   margin: auto;
   justify-content: space-around;
   margin-right: 35px;
@@ -435,7 +465,8 @@ footer div.foot div li {
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
 }
-footer div.foot div input, footer div.foot div button {
+footer div.foot div input,
+footer div.foot div button {
   width: 100%;
   height: 35px;
   margin-top: 8px;
@@ -447,6 +478,211 @@ footer div.foot div button {
   border: none;
   height: 40px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  main .car-cont {
+    height: 40vh;
+  }
+  main .car-cont .motiv div.info-cont {
+    width: 30%;
+    max-height: 20vh;
+  }
+  main .car-cont .motiv div.info-cont p {
+    font-size: 1rem;
+  }
+  main div.activity .acts div div label {
+    font-size: 1rem;
+  }
+  main div.categ div.grids .grid {
+    height: 25vh;
+  }
+  main div.recents div.gridss div.gridd div.spec div p {
+    font-size: 0.9rem;
+  }
+  main div.recents div.gridss div.gridd p.descr {
+    font-size: 1rem;
+  }
+  main div.recents div.gridss div.gridd img.building-img {
+    height: 20vh;
+  }
+  main div.merit .inner-merit div.gridsss div h3 {
+    font-size: 1.3rem;
+  }
+  main div.merit .inner-merit div.gridsss div p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  footer div.foot div p {
+    font-size: 1rem;
+  }
+  footer div.foot div li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 779px) {
+  main div.recents div.gridss.desk-grid {
+    display: none;
+  }
+  main div.recents div.gridss.mobile-grids {
+    display: flex;
+  }
+  main div.recents div.gridss div.gridd img.building-img {
+    height: 25vh;
+  }
+  main div.merit .inner-merit div.gridsss.desk-grid {
+    display: none;
+  }
+  main div.merit .inner-merit div.gridsss.mobile-grids {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  main div.merit .inner-merit div.gridsss div h3 {
+    font-size: 1.3rem;
+  }
+  main div.merit .inner-merit div.gridsss div p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  footer div.foot.desk-grid {
+    display: none;
+  }
+  footer div.foot.mobile-grids {
+    display: flex;
+  }
+  footer div.foot div p {
+    font-size: 1rem;
+  }
+  footer div.foot div li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  header nav.desk-nav {
+    display: none;
+  }
+  header nav.mobile-nav {
+    display: block;
+    margin-top: 20px;
+    padding: 2px 0 2px 0;
+    text-align: right;
+  }
+  header nav.mobile-nav .ml-auto {
+    padding: 0;
+  }
+  header div.sidenav {
+    font-family: "Roboto", sans-serif;
+    color: #46474A;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -50px;
+    background-color: #FFF;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 45vh;
+    width: 0;
+    overflow-x: hidden;
+    justify-content: space-around;
+  }
+  header div.sidenav a {
+    color: #46474A;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  header div.sidenav a:hover {
+    color: #81AC3C;
+    font-style: italic;
+  }
+  header div.sidenav span {
+    padding-right: 30px;
+    font-size: 3rem;
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+
+  main .car-cont {
+    height: 45vh;
+  }
+  main .car-cont .motiv div.info-cont {
+    width: 60%;
+    max-height: 50vh;
+    margin: auto;
+  }
+  main div.activity {
+    margin-top: 0;
+  }
+  main div.activity .acts div {
+    flex-direction: column;
+  }
+  main div.activity .acts div div select {
+    width: 89%;
+  }
+  main div.categ div.grids {
+    flex-direction: column;
+  }
+  main div.categ div.grids .grid {
+    min-height: 40vh;
+    width: 100%;
+  }
+  main div.recents div.gridss.desk-grid {
+    display: none;
+  }
+  main div.recents div.gridss.mobile-grids {
+    display: flex;
+    flex-direction: column;
+  }
+  main div.recents div.gridss div.gridd {
+    margin-right: 0;
+    width: 100%;
+  }
+  main div.recents div.gridss div.gridd img.building-img {
+    height: 25vh;
+  }
+  main div.merit .inner-merit div.gridsss.desk-grid {
+    display: none;
+  }
+  main div.merit .inner-merit div.gridsss.mobile-grids {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  main div.merit .inner-merit div.gridsss div {
+    margin-bottom: 30px;
+  }
+  main div.merit .inner-merit div.gridsss div h3 {
+    font-size: 1.3rem;
+  }
+  main div.merit .inner-merit div.gridsss div p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  footer div.foot.desk-grid {
+    display: none;
+  }
+  footer div.foot.mobile-grids {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div.foot {
+    padding: 10px 0;
+  }
+  footer div.foot div {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  footer div.foot div p {
+    font-size: 1rem;
+  }
+  footer div.foot div li {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,13 +13,13 @@
     <title>Home | Modern Estate</title>
 </head>
 
-<body>
+<body onload="loadd();" >
     <header>
         <div>
             <img src="img/logo.png" alt="">
             <button>SUBMIT PROPERTY</button>
         </div>
-        <nav>
+        <nav class="desk-nav">
             <a class="current-pg" href="">HOME</a>
             <a href="">ELEMENTS</a>
             <a href="">FEATURES</a>
@@ -29,6 +29,26 @@
             <a href="">BLOG</a>
             <a href="">GALLERY</a>
         </nav>
+
+        <nav class="mobile-nav">
+            <div class="ml-auto ">
+				<span class="btn-sidenav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			</div>
+
+        </nav>
+        <div id="mySidenav" class="sidenav ">
+
+            <span  class="closebtn" onclick="closeNav()">&times;</span>
+
+            <a href="#">ELEMENTS</a>
+            <a href="#">FEATURES</a>
+            <a href="#">EXTRAS</a>
+            <a href="#">PROPERTY CATALOG</a>
+            <a href="#">PAGES</a>
+            <a href="#">BLOG</a>
+            <a href="#">GALLERY</a>
+            
+        </div>
     </header>
     <main>
         <!-- Carousel section -->
@@ -195,18 +215,18 @@
         <div class="recents">
             <h2>Recent Properties </h2>
             <hr>
-            <div class="gridss">
+            <div class="gridss desk-grid">
                 <div class="gridd">
                     <img class="building-img" src="img/building.jpg" alt="">
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
@@ -215,12 +235,12 @@
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
@@ -229,28 +249,28 @@
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
             </div>
-            <div class="gridss">
+            <div class="gridss desk-grid">
                 <div class="gridd">
                     <img class="building-img" src="img/occidental.jpg" alt="">
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
@@ -259,12 +279,12 @@
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
@@ -273,12 +293,104 @@
                     <h3>Building: 123 on the Park</h3>
                     <p class="price"> $4,339.00/<sub>month</sub> </p>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
-                        <div> <span><img src="" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
                     </div>
                     <div class="specs">
-                        <div> <span><img src="" alt=""></span> <p>2 bathrooms</p> </div>
-                        <div> <span><img src="" alt=""></span> <p>2 garages</p> </div>
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+            </div>
+
+
+            <div class="gridss mobile-grids">
+                <div class="gridd">
+                    <img class="building-img" src="img/building.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+                <div class="gridd">
+                    <img class="building-img" src="img/maywood.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+            </div>
+            <div class="gridss mobile-grids">
+                <div class="gridd">
+                    <img class="building-img" src="img/ave.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+                <div class="gridd">
+                    <img class="building-img" src="img/occidental.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+            </div>
+            <div class="gridss mobile-grids">
+                <div class="gridd">
+                    <img class="building-img" src="img/kelton.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
+                    </div>
+                    <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
+                </div>
+                <div class="gridd">
+                    <img class="building-img" src="img/fuller.jpg" alt="">
+                    <h3>Building: 123 on the Park</h3>
+                    <p class="price"> $4,339.00/<sub>month</sub> </p>
+                    <div class="specs">
+                        <div> <span><img src="img/grid.svg" alt=""></span> <p class="icon-text">1200 sq ft</p> </div>
+                        <div> <span><img src="img/doblebed.svg" alt=""></span> <p class="icon-text">4 bedrooms</p> </div>
+                    </div>
+                    <div class="specs">
+                        <div> <span><img src="img/battub.svg" alt=""></span> <p class="icon-text">2 bathrooms</p> </div>
+                        <div> <span><img src="img/house.svg" alt=""></span> <p class="icon-text">2 garages</p> </div>
                     </div>
                     <p class="descr">Introducing Brooklyn's most unique and genteel address: 123 on the park, A steady, one-of-a-kind rental residence directly overlooking Brooklyn's famed Prospect Park.</p>
                 </div>
@@ -294,27 +406,57 @@
                 <h2>Our Advantages</h2>
                 <hr>
     
-                <div class="gridsss">
+                <div class=" desk-grid gridsss">
                     <div>
-                        <span></span>
+                        <img src="img/loc.svg" alt="">
                         <h3>Various Locations</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam,</p>
                     </div>
                     <div>
-                        <span></span>
+                        <img src="img/cam.svg" alt="">
                         <h3>View Apartments</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam,</p>
                     </div>
                     <div>
-                        <span></span>
+                        <img src="img/lockpad.svg" alt="">
                         <h3>Privacy and Security</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam,</p>
                     </div>
                     <div>
-                        <span></span>
+                        <img src="img/mony.svg" alt="">
+                        <h3>No Commission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+
+
+                <div class="gridsss mobile-grids">
+                    <div>
+                        <img src="img/loc.svg" alt="">
+                        <h3>Various Locations</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                    <div>
+                        <img src="img/cam.svg" alt="">
+                        <h3>View Apartments</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+                <div class="gridsss mobile-grids">
+                    <div>
+                        <img src="img/lockpad.svg" alt="">
+                        <h3>Privacy and Security</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                    <div>
+                        <img src="img/mony.svg" alt="">
                         <h3>No Commission</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
 aliqua. Ut enim ad minim veniam,</p>
@@ -328,12 +470,11 @@ aliqua. Ut enim ad minim veniam,</p>
     </main>
 
     <footer>
-        <div class="foot">
+        <div class="foot desk-grid">
             <div>
                 <img src="img/foot-logo.png" alt="">
                 <p>We believe in Simple, Creative & Flexible Design Standards.</p>
-                <p>Headquarters: <br> <br> 795 Folsom Ave, Suite 600 San Francisco, SA94107</p>
-    
+                <p>Headquarters: <br> <br> 795 Folsom Ave, Suite 600 San Francisco, SA94107</p>    
                 <p>Phone <span>(91) 8547 632521</span></p>
                 <p>Fax <span>(91) 11 4752 1433</span></p>
                 <p>Email <span>info@domain.com</span></p>
@@ -355,6 +496,44 @@ aliqua. Ut enim ad minim veniam,</p>
                 <p>A home is all you need <br> <span>December 28, 2021</span></p> <br>
     
             </div>
+            <div>
+                <h3>Newslatter</h3>
+                <p>Enter your email to get more information from us.</p>
+                <input type="text" placeholder="example@domain.com" name="" id="">
+                <button type="submit">SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <div class="foot mobile-grids">
+            <div>
+                <img src="img/foot-logo.png" alt="">
+                <p>We believe in Simple, Creative & Flexible Design Standards.</p>
+                <p>Headquarters: <br> <br> 795 Folsom Ave, Suite 600 San Francisco, SA94107</p>
+    
+                <p>Phone <span>(91) 8547 632521</span></p>
+                <p>Fax <span>(91) 11 4752 1433</span></p>
+                <p>Email <span>info@domain.com</span></p>
+            </div>
+            <div>
+                <h3>Recent posts</h3>
+                <p>Believe in the house of your dreams <br> <span>December 28, 2021</span></p> <br>
+                <p>Getting your dream house in minutes <br> <span>December 28, 2021</span></p> <br>
+                <p>A home is all you need <br> <span>December 28, 2021</span></p> <br>
+    
+            </div>
+        </div>
+        <div class="foot mobile-grids">
+            <div>
+                <h3>Blogrol</h3>
+                <ul>
+                    <li>Documentation</li>
+                    <li>Feedback</li>
+                    <li>Plugins</li>
+                    <li>Support</li>
+                    <li>Themes</li>
+                </ul>
+            </div>
+            
             <div>
                 <h3>Newslatter</h3>
                 <p>Enter your email to get more information from us.</p>

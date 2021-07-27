@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5in" height="5in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5000 5000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ enable-background="new 0 0 24 24">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FC8816}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="grid.svg">
+   <path class="fil0" d="M4409 649l-4009 0c-58,0 -105,47 -105,105l0 4009c0,59 47,106 105,106l4009 0c59,0 106,-47 106,-106l0 -4009c0,-58 -47,-106 -106,-105zm-2743 4009l-1160 0 0 -1161 1160 0 0 1161zm0 -1372l-1160 0 0 -1055 1160 0 0 1055zm0 -1266l-1160 0 0 -1160 1160 0 0 1160zm1266 2638l-1055 0 0 -1161 1055 0 0 1161zm0 -1372l-1055 0 0 -1055 1055 0 0 1055zm0 -1266l-1055 0 0 -1160 1055 0 0 1160zm1372 2638l-1161 0 0 -1161 1161 0 0 1161zm0 -1372l-1161 0 0 -1055 1161 0 0 1055zm0 -1266l-1161 0 0 -1160 1161 0 0 1160z"/>
+  </g>
+ </g>
+</svg>
